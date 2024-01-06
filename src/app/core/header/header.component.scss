@@ -1,0 +1,38 @@
+.logo {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.spacer {
+    flex: .9 1 auto;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.responsive-menu {
+    flex-direction: column;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .responsive-menu {
+        display: flex;
+    }
+}
+
+.my-position {
+    text-align: center;
+}

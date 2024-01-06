@@ -1,0 +1,40 @@
+.contact-page {
+    align-items: center;
+    display: flex;
+    font-size: 1.4em;
+    justify-content: center;
+    min-height: calc(100vh - 196px);
+    text-align: center;
+}
+
+.container-contact {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 15px;
+}
+
+p {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+h1,
+h2 {
+    margin-bottom: 16px;
+    font-weight: bolder;
+}
+
+h1 {
+    color: var(--color-grey);
+    font-size: 32px;
+    margin-top: 28px;
+}
+
+.example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 8px;
+}
+
+// .intro {
+//     margin: 1em 0;
+//     text-align: center;
+// }

@@ -1,0 +1,28 @@
+<div class="example-button-container">
+    <button mat-mini-fab color="primary" [matMenuTriggerFor]="beforeMenu" class="image-size">
+    </button>
+</div>
+<mat-menu #beforeMenu="matMenu" xPosition="before" class="glass-effect">
+    <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+            <div class="col-md-8">
+                <mat-chip-option color="accent" selected>TextError Tech.</mat-chip-option>
+            </div>
+            <div class="col-6 col-md-4"><mat-chip-option color="accent">Logout</mat-chip-option></div>
+        </div>
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+            <div class="col-6 col-md-4">
+                <button class="big-image"></button>
+            </div>
+            <div class="col-md-8 font-padding-style">
+                <label>
+                    <fa-icon [icon]="faUserNinja"></fa-icon> {{name}}
+                    {{email}}
+                    <fa-icon [icon]="faMapLocation"></fa-icon> {{contact}}
+                </label>
+            </div>
+        </div>
+    </div>
+</mat-menu>
