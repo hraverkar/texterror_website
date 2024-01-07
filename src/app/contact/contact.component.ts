@@ -22,25 +22,25 @@ export class ContactComponent {
   public onLinkClick(identifier: string) {
     switch (identifier) {
       case 'twitter':
-        window.open('https://www.twitter.com/hraverkar', '_blank')
+        window.open('https://twitter.com/hraverkar', '_blank')
         break;
       case 'github':
-        window.open('https://www.github.com/hraverkar', '_blank');
+        window.open('https://github.com/hraverkar', '_blank');
         break;
       case 'stackOverflow':
-        window.open('www.linktothepage.com', '_blank');
+        window.open('https://dev.to/hraverkar', '_blank');
         break;
       case 'medium':
-        window.open('www.linktothepage.com', '_blank');
+        window.open('https://medium.com/@hraverkar', '_blank');
         break;
       case 'dev':
-        window.open('www.linktothepage.com', '_blank');
+        window.open('https://dev.to/hraverkar', '_blank');
         break;
       case 'linkedin':
         window.open('https://www.linkedin.com/in/hraverkar', '_blank');
         break;
       case 'google':
-        window.open('www.linktothepage.com', '_blank');
+        window.open('https://www.google.com/search?sca_esv=596231964&q=Harshal+Raverkar&stick=H4sIAAAAAAAAAOOwesRoyi3w8sc9YSmdSWtOXmNU4-IJSC0qzs8LTk0sSs4QEuNic80rySypFOKR4uLicMvQtbRwLzLmWcQq4JFYVJyRmKMQlFiWWpSdWAQAhLw7HU0AAAA&sa=X&ved=2ahUKEwjstPbvpsmDAxVze2wGHQTrCRsQnJoFegQIFxAH&biw=1536&bih=730&dpr=1.25#ip=1', '_blank');
         break;
     }
   }

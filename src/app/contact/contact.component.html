@@ -8,13 +8,20 @@
                 media to keep in touch.</P>
         </div>
         <div class="example-button-row">
-            <fa-icon [icon]="faGithub" [size]="'2x'" (click)="onLinkClick('github')"></fa-icon>
-            <fa-icon [icon]="faDev" [size]="'2x'" (click)="onLinkClick('dev')"></fa-icon>
-            <fa-icon [icon]="faTwitter" [size]="'2x'" (click)="onLinkClick('twitter')"></fa-icon>
-            <fa-icon [icon]="faMedium" [size]="'2x'" (click)="onLinkClick('medium')"></fa-icon>
-            <fa-icon [icon]="faStackOverflow" [size]="'2x'" (click)="onLinkClick('stackOverflow')"></fa-icon>
-            <fa-icon [icon]="faLinkedin" [size]="'2x'" (click)="onLinkClick('linkedin')"></fa-icon>
-            <fa-icon [icon]="faGoogle" [size]="'2x'" (click)="onLinkClick('google')"></fa-icon>
+            <fa-icon [icon]="faGithub" [size]="'2x'" [styles]="{'cursor': 'pointer'}"
+                (click)="onLinkClick('github')"></fa-icon>
+            <fa-icon [icon]="faDev" [size]="'2x'" (click)="onLinkClick('dev')"
+                [styles]="{'cursor': 'pointer'}"></fa-icon>
+            <fa-icon [icon]="faTwitter" [size]="'2x'" (click)="onLinkClick('twitter')"
+                [styles]="{'cursor': 'pointer'}"></fa-icon>
+            <fa-icon [icon]="faMedium" [size]="'2x'" (click)="onLinkClick('medium')"
+                [styles]="{'cursor': 'pointer'}"></fa-icon>
+            <fa-icon [icon]="faStackOverflow" [size]="'2x'" (click)="onLinkClick('stackOverflow')"
+                [styles]="{'cursor': 'pointer'}"></fa-icon>
+            <fa-icon [icon]="faLinkedin" [size]="'2x'" (click)="onLinkClick('linkedin')"
+                [styles]="{'cursor': 'pointer'}"></fa-icon>
+            <fa-icon [icon]="faGoogle" [size]="'2x'" (click)="onLinkClick('google')"
+                [styles]="{'cursor': 'pointer'}"></fa-icon>
         </div>
 
     </div>

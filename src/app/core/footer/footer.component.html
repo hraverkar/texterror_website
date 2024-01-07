@@ -4,23 +4,44 @@
         <div class="footer-links">
             <!-- Footer links -->
             <div class="footer-column">
-                <h5>Products</h5>
-                <ul>
-                    <li><a href="#">Surface</a></li>
-                    <li><a href="#">Xbox</a></li>
-                    <li><a href="#">Windows</a></li>
-                    <!-- Add more links as needed -->
-                </ul>
+                <h5>Request</h5>
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="name" formControlName="name" class="form-control" id="name">
+                            <div *ngIf="contactForm.get('name').touched && contactForm.get('name').hasError('required')"
+                                class="error">
+                                Name is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" formControlName="email" class="form-control" id="email">
+                            <div *ngIf="contactForm.get('name').touched && contactForm.get('name').hasError('required')"
+                                class="error">
+                                Email is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" formControlName="message" id="message"></textarea>
+                        <div *ngIf="contactForm.get('message').touched && contactForm.get('message').hasError('required')"
+                            class="error">
+                            Message is required.
+                        </div>
+                    </div>
+                    <button type="submit" [disabled]="!contactForm.valid" class="btn btn-primary">Submit</button>
+                </form>
             </div>
 
             <div class="footer-column">
-                <h5>Products</h5>
-                <ul>
-                    <li><a href="#">Surface</a></li>
-                    <li><a href="#">Xbox</a></li>
-                    <li><a href="#">Windows</a></li>
-                    <!-- Add more links as needed -->
-                </ul>
+                <h5>Find us on map</h5>
+                <iframe title="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.828214008234!2d75.85767947503284!3d22.734625579376576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd70a4c288a7%3A0x1edd2e5adfab5d6b!2sGovernment%20Ahilya%20Ashram%20Girls%20Higher%20Secondry%20School%20no.1!5e0!3m2!1sen!2sin!4v1688202795143!5m2!1sen!2sin"
+                    allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
             </div>
 
             <div class="footer-column">
